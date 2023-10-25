@@ -1,0 +1,75 @@
+Script started on 2023-10-25 17:50:46+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="159" LINES="21"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+hello
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt [K
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 117, in <module>
+    main(input_file, output_file)
+  File "/workspaces/FLT_Assignment4/main.py", line 110, in main
+    write_cfg(output_file, )
+TypeError: write_cfg() missing 1 required positional argument: 'cfg'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 117, in <module>
+    main(input_file, output_file)
+  File "/workspaces/FLT_Assignment4/main.py", line 104, in main
+    cfg = read_cfg()
+TypeError: read_cfg() missing 1 required positional argument: 'filename'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+  File "/workspaces/FLT_Assignment4/main.py", line 96
+    write_cfg(filename, cfg):
+                             ^
+IndentationError: unindent does not match any outer indentation level
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 117, in <module>
+    main(input_file, output_file)
+  File "/workspaces/FLT_Assignment4/main.py", line 110, in main
+    write_cfg(output_file, cfg)
+  File "/workspaces/FLT_Assignment4/main.py", line 98, in write_cfg
+    for lhs, rhss in cfg.items():
+AttributeError: 'int' object has no attribute 'items'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 117, in <module>
+    main(input_file, output_file)
+  File "/workspaces/FLT_Assignment4/main.py", line 108, in main
+    cfg = remove_unreachable_symbols(cfg, start_symbol)
+  File "/workspaces/FLT_Assignment4/main.py", line 91, in remove_unreachable_symbols
+    new_cfg[lhs] = fg[lhs]
+NameError: name 'fg' is not defined. Did you mean: 'cfg'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 117, in <module>
+    main(input_file, output_file)
+  File "/workspaces/FLT_Assignment4/main.py", line 104, in main
+    cfg = read_cfg(input_file)
+  File "/workspaces/FLT_Assignment4/main.py", line 7, in read_cfg
+    lhs, rhs = linestrip().split("::=")
+NameError: name 'linestrip' is not defined
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+  File "/workspaces/FLT_Assignment4/main.py", line 66
+    for lhs, rhss in cfg.items()
+                                ^
+SyntaxError: expected ':'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+  File "/workspaces/FLT_Assignment4/main.py", line 115
+    input_file = sys.argv[]
+                          ^
+SyntaxError: invalid syntax
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py input.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 117, in <module>
+    main(input_file, utput_file)
+NameError: name 'utput_file' is not defined. Did you mean: 'output_file'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ ^C
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ exit
+
+Script done on 2023-10-25 17:54:03+00:00 [COMMAND_EXIT_CODE="130"]
