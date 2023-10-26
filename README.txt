@@ -8,7 +8,7 @@ Description: the code is an implementation of taking input CFG and applying 3 al
 
 
 **Commands to Run the Program:**
- To run the code and give the input and output file names in command line use the below command:
+ To run the code use the below command(give the input and output file names in command line):
 
     python [script name] [input file] [output file]
 
