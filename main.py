@@ -70,7 +70,7 @@ def remove_eps(grammar, non_terminals, start_symbol):
 
     if start_symbol in nullable_variables:
         new_start_symbol = "<" + start_symbol[1:-1] + "1>"
-        new_grammar[new_start_symbol] = {('ε',), (start_symbol,)}
+        new_grammar[new_start_symbol] = {('',), (start_symbol,)}
         non_terminals.add(new_start_symbol)
         start_symbol = new_start_symbol
 
