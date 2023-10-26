@@ -27,49 +27,51 @@ def parse_grammar(file_path):
 
     return grammar, terminals, non_terminals
 
-def remove_unproductive(grammar, terminals, non_terminals):
-    productive_symbols = set(terminals)
-    productive_grammar = {}
-    
+def find_nullable_variables(grammar, non_terminals):
+    nullable_variables = set()
     change = True
+
     while change:
         change = False
         for non_terminal in non_terminals:
-            if non_terminal not in productive_symbols:
+            if non_terminal not in nullable_variables:
                 for production in grammar.get(non_terminal, []):
-                    if all(symbol in productive_symbols for symbol in production):
-                        productive_symbols.add(non_terminal)
+                    if all(symbol in nullable_variables or symbol == 'ε' for symbol in production):
+                        nullable_variables.add(non_terminal)
                         change = True
                         break
-    
-    for non_terminal in non_terminals:
-        if non_terminal in productive_symbols:
-            productive_grammar[non_terminal] = []
-            for production in grammar[non_terminal]:
-                if all(symbol in productive_symbols for symbol in production):
-                    productive_grammar[non_terminal].append(production)
+    return nullable_variables
 
-    return productive_grammar, terminals, productive_symbols
+def remove_epsilon_productions(grammar, nullable_variables):
+    new_grammar = {k: [] for k in grammar}
+    for non_terminal, productions in grammar.items():
+        for production in productions:
+            if production != ['ε']:
+                new_grammar[non_terminal].append(production)
+                for symbol in production:
+                    if symbol in nullable_variables:
+                        new_production = [s for s in production if s != symbol]
+                        if new_production and new_production != production:
+                            new_grammar[non_terminal].append(new_production)
 
-def remove_unreachable_symbols(grammar, start_symbol):
-    reachable_symbols = {start_symbol}
-    new_added = True
-    while new_added:
-        new_added = False
-        for non_terminal in list(reachable_symbols):  # Create a copy of the set for iteration
-            if non_terminal in grammar:
-                for production in grammar[non_terminal]:
-                    for symbol in production:
-                        if symbol not in reachable_symbols:
-                            reachable_symbols.add(symbol)
-                            new_added = True
+    # Remove duplicate productions
+    for non_terminal in new_grammar:
+        new_grammar[non_terminal] = [list(t) for t in set(tuple(p) for p in new_grammar[non_terminal])]
 
-    unreachable_grammar = {k: v for k, v in grammar.items() if k in reachable_symbols}
-    for non_terminal in unreachable_grammar:
-        unreachable_grammar[non_terminal] = [production for production in unreachable_grammar[non_terminal] if all(symbol in reachable_symbols for symbol in production)]
+    # Remove ε-productions from variables except for those originally nullable
+    for non_terminal in list(new_grammar.keys()):
+        if non_terminal not in nullable_variables and ['ε'] in new_grammar[non_terminal]:
+            new_grammar[non_terminal].remove(['ε'])
+        if not new_grammar[non_terminal]:
+            del new_grammar[non_terminal]
 
-    return unreachable_grammar, reachable_symbols
+    return new_grammar
 
+def write_grammar_to_file(file_path, grammar):
+    with open(file_path, 'w') as f:
+        for lhs, productions in grammar.items():
+            for production in productions:
+                f.write(f"{lhs} ::= {' '.join(production)}\n")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -79,15 +81,11 @@ if __name__ == "__main__":
     input_file_path = sys.argv[1]
     output_file_path = sys.argv[2]
     grammar, terminals, non_terminals = parse_grammar(input_file_path)
-    start_symbol = next(iter(grammar))
 
-    productive_grammar, productive_terminals, productive_non_terminals = remove_unproductive(grammar, terminals, non_terminals)
-    reachable_grammar, reachable_symbols = remove_unreachable_symbols(productive_grammar, start_symbol)
+    nullable_variables = find_nullable_variables(grammar, non_terminals)
+    epsilon_free_grammar = remove_epsilon_productions(grammar, nullable_variables)
 
-    with open(output_file_path, 'w') as f:
-        for lhs, productions in reachable_grammar.items():
-            for production in productions:
-                f.write(f"{lhs} ::= {' '.join(production)}\n")
+    write_grammar_to_file(output_file_path, epsilon_free_grammar)
 
     print("Output written to", output_file_path)
 
