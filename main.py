@@ -133,8 +133,11 @@ if __name__ == "__main__":
     reachable_grammar, reachable_symbols = remove_unreachable_symbols(productive_grammar, start_symbol)
     final_grammar, final_non_terminals, final_start_symbol = remove_eps(reachable_grammar, reachable_symbols, start_symbol)
 
+    # Display and store the final grammar
     with open(output_file_path, 'w') as output_file:
         for non_terminal in sorted(final_non_terminals):
             if non_terminal in final_grammar:
                 for production in sorted(final_grammar[non_terminal], key=lambda x: ' '.join(x)):
-                    output_file.write(f"{non_terminal} ::= {' '.join(production)}\n")
+                    production_str = f"{non_terminal} ::= {' '.join(production)}"
+                    print(production_str)  # Display to console
+                    output_file.write(production_str + '\n')  # Write to the output file
