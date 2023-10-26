@@ -1,33 +1,70 @@
-# Define sets to store terminal and non-terminal symbols
-terminal = set()
-non_terminal = set()
+import sys
 
-# Read equations from the input file
-with open("input.txt", "r") as file:
-    equations = file.read().splitlines()
+def parse_grammar(file_path):
+    grammar = {}
+    terminals = set()
+    non_terminals = set()
 
-# Function to process a string and identify non-terminals
-def identify_non_terminals(s):
-    s = s.replace("(", " ").replace(")", " ")  # Treat "(" and ")" as spaces
-    symbols = s.split()
-    for symbol in symbols:
-        # Check if the symbol is a non-terminal enclosed in "<" and ">"
-        if symbol.startswith("<") and symbol.endswith(">"):
-            non_terminal.add(symbol)  # Add the non-terminal to the set
-        else:
-            terminal.add(symbol)  # Add the symbol to the terminal set
+    with open(file_path, 'r') as file:
+        for line in file:
+            line = line.strip()
+            if line:
+                lhs, rhs = line.split("::=")
+                lhs = lhs.strip()
+                rhs = [symbol.strip() for symbol in rhs.split() if symbol.strip()]
 
-# Iterate through each equation in the list of equations
-for equation in equations:
-    # Split the equation into lhs and rhs using "::=" as the delimiter
-    lhs, rhs = equation.split("::=")
-    
-    # Process the lhs to identify non-terminal symbols
-    identify_non_terminals(lhs)
-    
-    # Process the rhs to identify terminal and non-terminal strings
-    identify_non_terminals(rhs)
+                non_terminals.add(lhs)
+                for symbol in rhs:
+                    if symbol.startswith("<") and symbol.endswith(">"):
+                        non_terminals.add(symbol)
+                    else:
+                        terminals.add(symbol)
 
-# Now, you have populated both the terminal and non-terminal sets
-print("terminals:", terminal)
-print("non-terminals:", non_terminal)
+                if lhs in grammar:
+                    grammar[lhs].append(rhs)
+                else:
+                    grammar[lhs] = [rhs]
+
+    return grammar, terminals, non_terminals
+
+def remove_unproductive(grammar, terminals, non_terminals):
+    productive_grammar = {k: [] for k in grammar}
+    productive_non_terminals = set()
+
+    productive_terminals = set(terminals)
+
+    new_marked = True
+    while new_marked:
+        new_marked = False
+        for non_terminal, productions in grammar.items():
+            if non_terminal not in productive_non_terminals:
+                for production in productions:
+                    if all(symbol in productive_terminals or symbol in productive_non_terminals for symbol in production):
+                        productive_non_terminals.add(non_terminal)
+                        new_marked = True
+                        break
+
+    for non_terminal, productions in grammar.items():
+        for production in productions:
+            if all(symbol in productive_terminals or symbol in productive_non_terminals for symbol in production):
+                productive_grammar[non_terminal].append(production)
+
+    for non_terminal in list(productive_grammar.keys()):
+        if not productive_grammar[non_terminal]:
+            del productive_grammar[non_terminal]
+
+    return productive_grammar
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python script_name.py input_file")
+        sys.exit(1)
+
+    input_file_path = sys.argv[1]
+    grammar, terminals, non_terminals = parse_grammar(input_file_path)
+    productive_grammar = remove_unproductive(grammar, terminals, non_terminals)
+
+    print("Productive Grammar:")
+    for lhs, productions in productive_grammar.items():
+        for production in productions:
+            print(f"{lhs} ::= {' '.join(production)}")
