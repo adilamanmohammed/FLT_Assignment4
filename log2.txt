@@ -1,0 +1,538 @@
+Script started on 2023-10-25 21:42:59+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="159" LINES="9"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+['adil']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+['adil']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 29, in <module>
+    nonterminals.extend(re.findall(r'<\s*(.*?)\s*>', lhs))
+NameError: name 're' is not defined
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+lhs: <expression> ::
+rhs: <expression> + <expression>
+lhs: <expression> ::
+rhs: ( <expression> )
+lhs: <expression> ::
+rhs: id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 29, in <module>
+    nonterminals.extend(re.findall(r'<\s*(.*?)\s*>', lhs))
+NameError: name 're' is not defined
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+Nonterminals: []
+Terminals: []
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: ['adil']
+non-terminals: []
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: []
+non-terminals: []
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: ['+', 'id']
+non-terminals: ['<expression>', '<expression>', '<expression>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'+', 'id'}
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'id', '+'}
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'+', 'b', '+a', 'id'}
+non-terminals: {'<expression>', '<adil>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'id', '+', 'b'}
+non-terminals: {'<expression>', '<adil>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'+a', 'id', '+', 'b'}
+non-terminals: {'<adil>', '<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'id', '+', 'b', '+a'}
+non-terminals: {'<expression>', '<adil>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'id', 'a', '+', 'b'}
+non-terminals: {'<adil>', '<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+  File "/workspaces/FLT_Assignment4/main.py", line 30
+    else
+        ^
+SyntaxError: expected ':'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ ls
+README.md  input.txt  log1.txt  log2.txt  main.py  output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear[3Plspython main.py 
+terminals: {'+', 'id', 'a', 'b'}
+non-terminals: {'<adil>', '<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<A>', '<B>', '<C>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<B>', '<A>', '<C>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<A>', '<C>', '<B>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<B>', '<C>', '<A>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<A>', '<B>', '<C>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ ls
+README.md  input.txt  log1.txt  log2.txt  main.py  output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ lsclear[K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear[K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear[3Plsclearpython main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<S>', '<D>', '<B>', '<C>', '<A>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<D>', '<A>', '<C>', '<S>', '<B>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py 
+Terminals: {'b', 'a'}
+Non-terminals: {'<B>', '<C>', '<D>', '<A>', '<S>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython trail.py [1Pmain[C[C[C[C
+terminals: {'a', 'b'}
+non-terminals: {'<C>', '<A>', '<S>', '<B>', '<D>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<C>', '<A>', '<S>', '<B>', '<D>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<A>', '<C>', '<S>', '<D>', '<B>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<B>', '<D>', '<A>', '<S>', '<C>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<A>', '<D>', '<B>', '<S>', '<C>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<A>', '<D>', '<C>', '<S>', '<B>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: set()
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py 
+terminals: set()
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<A>', '<C>', '<S>', '<D>', '<B>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: set()
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id'}
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id'}
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id'}
+non-terminals: {'expression'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id'}
+non-terminals: {'expression'}
+['<expression> ::= <expression> + <expression>', '<expression> ::= ( <expression> )', '<expression> ::= id']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id'}
+non-terminals: {'expression'}
+<expression> ::= <expression> + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id'}
+non-terminals: {'expression'}
+p
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id'}
+non-terminals: {'expression'}
+<expression> ::= <expression> + <expression>
+p
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id'}
+non-terminals: {'expression'}
+['<expression> ::= <expression> + <expression>', '<expression> ::= ( <expression> )', '<expression> ::= id']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id', '+'}
+non-terminals: {'expression'}
+['<expression> ::= <expression> + <expression>', '<expression> ::= ( <expression> )', '<expression> ::= id']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'b', 'a'}
+non-terminals: {'D', 'A', 'C', 'B', 'a', 'b', 'S'}
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D>\xa0::=\xa0<A>\xa0<B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'a', 'b'}
+non-terminals: {'C', 'D', 'S', 'b', 'a', 'B', 'A'}
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D>\xa0::=\xa0<A>\xa0<B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py 
+terminals: {'b', 'a'}
+non-terminals: {'B', 'D', 'b', 'C', 'A', 'S', 'a'}
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D>\xa0::=\xa0<A>\xa0<B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'b', 'a'}
+non-terminals: {'b', 'B', 'C', 'A', 'S', 'D', 'a'}
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D>\xa0::=\xa0<A>\xa0<B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'', '<A>', '<B>', 'b', '\xa0<A>\xa0<B>', 'a', '<C>'}
+non-terminals: {'', '\xa0', '<A>', '<D>', '<S>', '<C>', '<B>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'', '<C>', 'b', '<A>', 'a', '<B>'}
+non-terminals: {'<S>', '', '<D>', '<C>', '<B>', '<A>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+  File "/workspaces/FLT_Assignment4/main.py", line 15
+    if(n=0):
+       ^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+terminals: set()
+non-terminals: set()
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D> ::= <A> <B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+lhs
+rhs
+terminals: set()
+non-terminals: set()
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D> ::= <A> <B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py 
+lhs <S> 
+rhs  <A> <B> 
+lhs <S> 
+rhs  <A> <C>
+lhs <A> 
+rhs  a <A> b
+lhs <A> 
+rhs  
+lhs <B> 
+rhs  a <A>
+lhs <C> 
+rhs  b <C> a
+lhs <D> 
+rhs  <A> <B>
+terminals: set()
+non-terminals: set()
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D> ::= <A> <B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py 
+lhs <S> 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 33, in <module>
+    extract_symbols(lhs,0)
+  File "/workspaces/FLT_Assignment4/main.py", line 17, in extract_symbols
+    for i in char:
+NameError: name 'char' is not defined. Did you mean: 'chr'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+lhs <S> 
+<
+S
+>
+ 
+rhs  <A> <B> 
+lhs <S> 
+<
+S
+>
+ 
+rhs  <A> <C>
+lhs <A> 
+<
+A
+>
+ 
+rhs  a <A> b
+lhs <A> 
+<
+A
+>
+ 
+rhs  
+lhs <B> 
+<
+B
+>
+ 
+rhs  a <A>
+lhs <C> 
+<
+C
+>
+ 
+rhs  b <C> a
+lhs <D> 
+<
+D
+>
+ 
+rhs  <A> <B>
+terminals: set()
+non-terminals: set()
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D> ::= <A> <B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+lhs <S> 
+<
+S
+>
+ 
+rhs  <A> <B> 
+lhs <S> 
+<
+S
+>
+ 
+rhs  <A> <C>
+lhs <A> 
+<
+A
+>
+ 
+rhs  a <A> b
+lhs <A> 
+<
+A
+>
+ 
+rhs  
+lhs <B> 
+<
+B
+>
+ 
+rhs  a <A>
+lhs <C> 
+<
+C
+>
+ 
+rhs  b <C> a
+lhs <D> 
+<
+D
+>
+ 
+rhs  <A> <B>
+terminals: set()
+non-terminals: set()
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D> ::= <A> <B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+lhs <S> 
+<
+S
+>
+ 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 43, in <module>
+    extract_symbols(lhs,0)
+  File "/workspaces/FLT_Assignment4/main.py", line 25, in extract_symbols
+    current_symbol.add(char)
+AttributeError: 'str' object has no attribute 'add'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+lhs <S> 
+<
+S
+>
+ 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 43, in <module>
+    extract_symbols(lhs,0)
+  File "/workspaces/FLT_Assignment4/main.py", line 25, in extract_symbols
+    current_symbol.append(char)
+AttributeError: 'str' object has no attribute 'append'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+  File "/workspaces/FLT_Assignment4/main.py", line 32
+    if(flag_terminal=True):
+       ^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+lhs <S> 
+<
+S
+>
+ 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 62, in <module>
+    extract_symbols(lhs,0)
+  File "/workspaces/FLT_Assignment4/main.py", line 27, in extract_symbols
+    current_part += char
+UnboundLocalError: local variable 'current_part' referenced before assignment
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+  File "/workspaces/FLT_Assignment4/main.py", line 35
+    current_terminal="" """"
+                           ^
+SyntaxError: unterminated string literal (detected at line 35)
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [Kpython main.py 
+  File "/workspaces/FLT_Assignment4/main.py", line 36
+    elif char ==">":
+    ^^^^
+SyntaxError: invalid syntax
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'b', 'a'}
+non-terminals: set()
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'a', 'b'}
+non-terminals: set()
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<B>', '<C>', '<A>', '<S>', '<D>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<B>', '<C>', '<S>', '<A>', '<D>'}
+<D> ::= <A> <B>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py [10Pclearpython main.py [10Pclearpython main.py 
+terminals: {'id', 'b', 'a'}
+non-terminals: {'<S>', '<D>', '<C>', '<A>', '<B>'}
+<D> ::= <A> <B>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<B>', '<A>', '<C>', '<D>', '<S>'}
+<D> ::= <A> <B>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<D>', '<A>', '<S>', '<C>', '<B>'}
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D> ::= <A> <B>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<B>', '<D>', '<S>', '<C>', '<A>'}
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D> ::= <A> <Y>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<A>', '<B>', '<D>', '<C>', '<S>'}
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>', '<A> ::= a <A> b', '<A> ::= ', '<B> ::= a <A>', '<C> ::= b <C> a', '<D> ::= <A> <Y>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<B>', '<D>', '<C>', '<S>', '<A>', '<Y>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id', 'b', 'it', 'a'}
+non-terminals: {'<C>', '<S>', '<D>', '<Y>', '<A>', '<B>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<A>', '<B>', '<exp>', '<C>', '<S>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<S>', '<A>', '<D>', '<B>', '<C>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clearpython main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<A>', '<B>', '<D>', '<C>', '<S>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id', '+'}
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'+a', 'id', '+'}
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'+', 'a', 'id'}
+non-terminals: {'<expression>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ ls
+README.md  input.txt  log1.txt  log2.txt  main.py  output.txt  trail.py
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ ls
+README.md  input.txt  log1.txt  log2.txt  main.py  output.txt  trail.py
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ lsclear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear[3Plsclearpython main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<S>', '<C>', '<D>', '<A>', '<B>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id', 'b', '+', 'a'}
+non-terminals: {'<B>', '<D>', '<S>', '<C>', '<A>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'id', '+', 'a', 'p', 'b'}
+non-terminals: {'<S>', '<B>', '<C>', '<A>', '<D>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<C>', '<A>', '<D>', '<S>', '<B>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ \clearpython main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<A>', '<B>', '<S>', '<D>', '<C>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<S>', '<D>', '<C>', '<A>', '<B>'}
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 82, in <module>
+    new_productions = remove_unproductive_symbols(equations, start_symbol)
+NameError: name 'start_symbol' is not defined
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py [10Pclearpython main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<B>', '<S>', '<A>', '<D>', '<C>'}
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<S>', '<C>', '<D>', '<A>', '<B>'}
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ v[Kpython main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<D>', '<B>', '<S>', '<C>', '<A>'}
+
+
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<A>', '<B>', '<S>', '<C>', '<D>'}
+
+
+['<S> ::= <A> <B> ', '<S> ::= <A> <C>']
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'b', 'a'}
+non-terminals: {'<B>', '<A>', '<D>', '<S>', '<C>'}
+
+
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 97, in <module>
+    new_productions = remove_unproductive_symbols(equations, start_symbol)
+TypeError: remove_unproductive_symbols() takes 1 positional argument but 2 were given
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py 
+terminals: {'a', 'b'}
+non-terminals: {'<D>', '<C>', '<A>', '<S>', '<B>'}
+
+
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/main.py", line 97, in <module>
+    new_productions = remove_unproductive_symbols(equations)
+  File "/workspaces/FLT_Assignment4/main.py", line 64, in remove_unproductive_symbols
+    all_symbols_productive = all(
+  File "/workspaces/FLT_Assignment4/main.py", line 65, in <genexpr>
+    (symbol in terminals) or (symbol in nonterminals and symbol in productive)
+NameError: name 'productive' is not defined
+[0;32m
