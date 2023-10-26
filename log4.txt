@@ -1,0 +1,1371 @@
+Script started on 2023-10-26 04:49:47+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="159" LINES="13"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ ls
+README.md  input1.txt  input3.txt  input5.txt  log1.txt  log3.txt  main.py     trail.py
+input.txt  input2.txt  input4.txt  input6.txt  log2.txt  log4.txt  output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear[3Plspython trail.py input3.txt output.txt4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Output written to output.txt
+
+Contents of output.txt:
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input3.txt output.txtclear[K[3Plspython trail.py input3.txt output.txt4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Output written to output.txt
+
+Contents of output.txt:
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<S> ::= a <T> a
+<S> ::= a a
+<C> ::= c
+<T> ::= <A> <B> <C>
+<A> ::= a <A>
+<A> ::= <C>
+<A> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<B> ::= <C>
+<B> ::= b
+<B> ::= <B> b
+<B> ::= ε
+<S> ::= a <T> a
+<S> ::= a a
+<A> ::= a <A>
+<A> ::= <C>
+<A> ::= a
+<A> ::= ε
+<C> ::= c
+<C> ::= ε
+<T> ::= <B> <C>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <A> <B>
+<T> ::= ε
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<B> ::= <B> b
+<B> ::= b
+<B> ::= <C>
+<T> ::= <B> <C>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <A> <B>
+<S> ::= a <T> a
+<S> ::= a a
+<C> ::= 
+<C> ::= c
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <B> <C>
+<T> ::= <A> <C>
+<B> ::= b
+<B> ::= <B> b
+<B> ::= <C>
+<A> ::= <C>
+<A> ::= a <A>
+<A> ::= a
+<S> ::= a <T> a
+<S> ::= a a
+<C> ::= c
+<C> ::= 
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<B> ::= <C>
+<B> ::= b
+<B> ::= <B> b
+<B> ::= ε
+<T> ::= <B> <C>
+<T> ::= <A> <C>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <B>
+<T> ::= ε
+<C> ::= 
+<C> ::= c
+<C> ::= ε
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<A> ::= ε
+<S> ::= a <T> a
+<S> ::= a a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a a
+<S> ::= a <T> a
+<T> ::= <B> <C>
+<T> ::= <A> <C>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= ε
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<A> ::= ε
+<B> ::= b
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= ε
+<C> ::= c
+<C> ::= ε
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<B> ::= <B> b
+<B> ::= b
+<B> ::= <C>
+<B> ::= ε
+<C> ::= c
+<C> ::= 
+<C> ::= ε
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= <A> <C>
+<T> ::= <A> <B> <C>
+<T> ::= <B> <C>
+<T> ::= <A> <B>
+<T> ::= ε
+<A> ::= a <A>
+<A> ::= a
+<A> ::= <C>
+<A> ::= ε
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<T> ::= <B> <C>
+<T> ::= <A> <C>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <B>
+<T> ::= ε
+<C> ::= 
+<C> ::= c
+<C> ::= ε
+<S> ::= a <T> a
+<S> ::= a a
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<A> ::= ε
+<B> ::= b
+<B> ::= <C>
+<B> ::= <B> b
+<B> ::= ε
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 149, in <module>
+    no_unit_grammar = remove_unit_productions(epsilon_free_grammar, non_terminals)
+  File "/workspaces/FLT_Assignment4/trail.py", line 78, in remove_unit_productions
+    unit_pairs = find_unit_pairs(grammar, non_terminals)
+  File "/workspaces/FLT_Assignment4/trail.py", line 95, in find_unit_pairs
+    for production in grammar[non_terminal]:
+KeyError: '<B>'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input3.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 174, in <module>
+    no_unit_grammar = remove_unit_productions(epsilon_free_grammar, non_terminals)
+  File "/workspaces/FLT_Assignment4/trail.py", line 106, in remove_unit_productions
+    for production in grammar.get(A, []):
+UnboundLocalError: local variable 'A' referenced before assignment
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input3.txt output.txt4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kpython trail.py input3.txt output.txt4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Original Grammar:
+<S> ::= a <T> a
+<T> ::= <A> <B> <C>
+<A> ::= a <A> | <C>
+<B> ::= <B> b | <C>
+<C> ::= c | ε
+
+Grammar after removing ε-productions:
+<S> ::= a <T> a | a a
+<T> ::= <A> <B> <C> | <B> <C> | <A> <B> | <A> <C> | ε
+<A> ::= <C> | a | a <A> | ε
+<B> ::= b | <B> b | <C> | ε
+<C> ::= c | ε | ε
+
+Grammar after removing unproductive productions:
+<C> ::= c | ε
+<B> ::= b | <B> b | <C>
+<T> ::= <A> <B> <C> | <B> <C> | <A> <B> | <A> <C>
+<A> ::= <C> | a | a <A>
+<S> ::= a <T> a | a a
+
+Grammar after removing unreachable symbols:
+
+
+Grammar after removing unit productions:
+a ::= 
+<C> ::= 
+b ::= 
+<B> ::= 
+<T> ::= 
+<A> ::= 
+<S> ::= 
+c ::=
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= a <A>
+<A> ::= a
+<A> ::= <C>
+<A> ::= ε
+<T> ::= <A> <B> <C>
+<T> ::= <B> <C>
+<T> ::= <A> <C>
+<T> ::= <A> <B>
+<T> ::= ε
+<C> ::= c
+<C> ::= 
+<C> ::= ε
+<S> ::= a a
+<S> ::= a <T> a
+<B> ::= <B> b
+<B> ::= b
+<B> ::= <C>
+<B> ::= ε
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= <A> <C>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <B>
+<T> ::= <B> <C>
+<A> ::= a
+<A> ::= <C>
+<A> ::= a <A>
+<B> ::= <C>
+<B> ::= b
+<B> ::= <B> b
+<C> ::= c
+<C> ::= 
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt[Kpython trail.py input4.txt output.txt[C[1P[1@6
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a b
+<S> ::= 
+<S> ::= a <S> b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt[C[C[C[1P[1P[1P[1P[1P[1@m[1@a[1@i[1@n
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a <S> b
+<S> ::= 
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input6.txt output.txt[1@trail[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a b
+<S> ::= 
+<S> ::= a <S> b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 90, in <module>
+    productive_grammar, productive_terminals, productive_non_terminals = remove_unproductive(grammar, terminals, non_terminals)
+NameError: name 'remove_unproductive' is not defined
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 127, in <module>
+    final_grammar, final_non_terminals = remove_eps(reachable_grammar, reachable_symbols)
+  File "/workspaces/FLT_Assignment4/trail.py", line 64, in remove_eps
+    new_grammar[non_terminal].extend(productions_to_add)
+KeyError: 'b'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a <S> b
+<S> ::= 
+<S> ::= a b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt[1P[1@4
+Output written to output.txt
+
+Contents of output.txt:
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<T> ::= <A> <B> <C>
+<T> ::= <B> <C>
+<T> ::= <A> <C>
+<T> ::= <A> <B>
+<C> ::= c
+<C> ::= 
+<A> ::= a <A>
+<A> ::= <C>
+<A> ::= a
+<S> ::= a <T> a
+<S> ::= a a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a <T> a
+<S> ::= a a
+<A> ::= a <A>
+<A> ::= <C>
+<A> ::= a
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= c
+<C> ::= 
+<T> ::= <A> <B> <C>
+<T> ::= <B> <C>
+<T> ::= <A> <C>
+<T> ::= <A> <B>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<C> ::= c
+<C> ::= 
+<S> ::= a <T> a
+<S> ::= a a
+<S> ::= a <T> a
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<B> ::= <B> b
+<B> ::= 
+<B> ::= <C>
+<A> ::= a <A>
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<A> ::= 
+<A> ::= <C>
+<T> ::= <A> <B> <C>
+<T> ::= 
+<T> ::= <A>
+<T> ::= <B>
+<T> ::= <A> <B>
+<T> ::= <C>
+<T> ::= <A> <C>
+<T> ::= <B> <C>
+<T> ::= <A> <B> <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<B> ::= 
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= 
+<C> ::= c
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= 
+<T> ::= <A>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B>
+<T> ::= <B> <C>
+<T> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<C> ::= c
+<C> ::= 
+<S> ::= a <T> a
+<S> ::= a a
+<B> ::= b
+<B> ::= <C>
+<B> ::= <B> b
+<T> ::= <B> <C>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<A> ::= <C>
+<A> ::= a <A>
+<A> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B> <C>
+<A> ::= a
+<A> ::= a <A>
+<A> ::= <C>
+<C> ::= c
+<C> ::= 
+<S> ::= a <T> a
+<S> ::= a a
+<B> ::= b
+<B> ::= <B> b
+<B> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= a <A>
+<A> ::= <C>
+<A> ::= a
+<B> ::= <C>
+<B> ::= b
+<B> ::= <B> b
+<C> ::= 
+<C> ::= c
+<T> ::= <A> <C>
+<T> ::= <A> <B> <C>
+<T> ::= <B> <C>
+<T> ::= <A> <B>
+<S> ::= a <T> a
+<S> ::= a a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 90, in <module>
+    productive_grammar, productive_terminals, productive_non_terminals = remove_unproductive(grammar, terminals, non_terminals)
+NameError: name 'remove_unproductive' is not defined
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt[Kpython trail.py input4.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 127, in <module>
+    final_grammar, final_non_terminals = remove_eps(reachable_grammar, reachable_symbols)
+  File "/workspaces/FLT_Assignment4/trail.py", line 64, in remove_eps
+    new_grammar[non_terminal].extend(productions_to_add)
+KeyError: 'c'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<T> ::= <A> <B> <C>
+<T> ::= 
+<T> ::= <A>
+<T> ::= <B>
+<T> ::= <A> <B>
+<T> ::= <C>
+<T> ::= <A> <C>
+<T> ::= <B> <C>
+<T> ::= <A> <B> <C>
+<S> ::= a <T> a
+<S> ::= a a
+<S> ::= a <T> a
+<C> ::= c
+<C> ::= 
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<B> ::= <B> b
+<B> ::= 
+<B> ::= <C>
+<A> ::= a <A>
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<A> ::= 
+<A> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<B> ::= 
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= 
+<C> ::= c
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= 
+<T> ::= <A>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B>
+<T> ::= <B> <C>
+<T> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<B> ::= 
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= 
+<C> ::= c
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= 
+<T> ::= <A>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B>
+<T> ::= <B> <C>
+<T> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<B> ::= 
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= 
+<C> ::= c
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= 
+<T> ::= <A>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B>
+<T> ::= <B> <C>
+<T> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt[1P
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= a <A> b
+<A> ::= a b
+<B> ::= a
+<B> ::= a <A>
+<S> ::= <A> <B>
+<S> ::= <B>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= a <A> b
+<A> ::= a b
+<B> ::= a
+<B> ::= a <A>
+<S> ::= <A> <B>
+<S> ::= <B>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt[1@4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[1P[1@2[1P[1@1
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= a
+<A> ::= a <A>
+<B> ::= b
+<S> ::= <A> <B>
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt[Kpython trail.py input1.txt output.txt[C[1P[1@2
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= a
+<A> ::= a <A>
+<S> ::= <A>
+<S> ::= b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input2.txt output.txt[1P[1@3
+Output written to output.txt
+
+Contents of output.txt:
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input3.txt output.txt[C[1P[1@4
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<B> ::= 
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= 
+<C> ::= c
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= 
+<T> ::= <A>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B>
+<T> ::= <B> <C>
+<T> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt[1P[1@5
+Output written to output.txt
+
+Contents of output.txt:
+<expression> ::= ( <expression> )
+<expression> ::= <expression> + <expression>
+<expression> ::= id
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input5.txt output.txt4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@6
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= 
+<S> ::= a <S> b
+<S> ::= a b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= 
+<S> ::= a <S> b
+<S> ::= a b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt[1P[1@4
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<B> ::= 
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= 
+<C> ::= c
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= 
+<T> ::= <A>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B>
+<T> ::= <B> <C>
+<T> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<B> ::= 
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= 
+<C> ::= c
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= 
+<T> ::= <A>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B>
+<T> ::= <B> <C>
+<T> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt[1P[1@6
+Output written to output.txt
+
+Contents of output.txt:
+<<S>1> ::= <S>
+<<S>1> ::= ε
+<S> ::= 
+<S> ::= a <S> b
+<S> ::= a b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt[1P[1@1
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= a
+<A> ::= a <A>
+<B> ::= b
+<S> ::= <A> <B>
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt[1P[1@2
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= a
+<A> ::= a <A>
+<S> ::= <A>
+<S> ::= b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input2.txt output.txt[Kpython 2trail.py 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/2trail.py", line 184, in <module>
+    if _name_ == "_main_":
+NameError: name '_name_' is not defined. Did you mean: '__name__'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python 2trail.py 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/2trail.py", line 184, in <module>
+    if _name_ == "_main_":
+NameError: name '_name_' is not defined. Did you mean: '__name__'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python 2trail.py [K
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/2trail.py", line 184, in <module>
+    if _name_ == "_main_":
+NameError: name '_name_' is not defined. Did you mean: '__name__'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python 2trail.py input
+\Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/2trail.py", line 184, in <module>
+    if _name_ == "_main_":
+NameError: name '_name_' is not defined. Did you mean: '__name__'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ \python 2trail.py input.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/2trail.py", line 184, in <module>
+    if _name_ == "_main_":
+NameError: name '_name_' is not defined. Did you mean: '__name__'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def extract_symbols_from_file(filename):
+bash: syntax error near unexpected token `('
+nals = set()
+    non_terminals = set()
+    start_symbol = None
+
+    with open(filename, 'r') as file:
+        for index, line in enumerate(file):
+    [0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     terminals = set()
+bash: syntax error near unexpected token `('
+        if index == 0:
+                start_symbol = line.split('::=')[0].strip()
+
+            non_terminals.update(symbol for symbol in line.split()[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     non_terminals = set()
+bash: syntax error near unexpected token `('
+ if symbol.startswith('<') and symbol.endswith('>'))
+            right_part = line.strip().split('::=')[1] if '::=' in line else ''
+            symbols = right_part.split()
+            for symbol in s[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     start_symbol = None
+bash: start_symbol: command not found
+ymbols:
+                if not symbol.startswith('<'):
+                    terminals.add(symbol)
+
+    return terminals, non_terminals, start_symbol
+
+def get_combinations(symbols, nullable_set):
+    if[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+ not symbols:
+        return [[]]
+
+    first = symbols[0]
+    rest_combinations = get_combinations(symbols[1:], nullable_set)
+
+    if first in nullable_set:
+        return [[first] + rest for rest in [0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     with open(filename, 'r') as file:
+bash: syntax error near unexpected token `('
+ations]
+    else:
+        return [[first] + rest for rest in rest_combinations]
+
+def removeEps(new_grammar):
+    nullable = set()
+    for lhs, rhs_lis[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         for index, line in enumerate(file):
+bash: syntax error near unexpected token `line'
+t in new_grammar.items():
+        for rhs in rhs_list:
+            if rhs == '':
+                nullable.add(lhs)
+
+    changed = True
+    while chang[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             if index == 0:
+>                 start_symbol = line.split('::=')[0].strip()
+bash: syntax error near unexpected token `('
+ed:
+        changed = False
+        for lhs, rhs_list in new_grammar.items():
+            for rhs in rhs_list:
+                symbols = rhs.split()
+ [0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+               if all(symbol in nullable for symbol in symbols) and lhs not in nullable:
+                    nullable.add(lhs)
+                    cha[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             non_terminals.update(symbol for symbol in line.split() if symbol.startswith('<') and symbol.endswith('>'))
+bash: syntax error near unexpected token `symbol'
+nged = True
+
+    return nullable
+
+def remove_epsilon_productions(grammar, nullable_set):
+    new_grammar = {}
+    
+    for lhs, rhs_list in grammar.it[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             right_part = line.strip().split('::=')[1] if '::=' in line else ''
+bash: syntax error near unexpected token `('
+ems():
+        new_rules = set()
+        for rhs in rhs_list:
+            symbols = rhs.split()
+            all_combinations = get_combinations(symbol[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             symbols = right_part.split()
+bash: syntax error near unexpected token `('
+s, nullable_set)
+            for combo in all_combinations:
+                new_rules.add(' '.join(combo).replace('<>', ''))
+        
+        new_gram[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             for symbol in symbols:
+>                 if not symbol.startswith('<'):
+bash: syntax error near unexpected token `if'
+mar[lhs] = list(new_rules)
+        if '' in new_grammar[lhs]:
+            new_grammar[lhs].remove('')
+
+    return new_grammar
+def construct_new_gramma[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                     terminals.add(symbol)
+bash: syntax error near unexpected token `symbol'
+r(filename):
+    terminals, non_terminals, start_symbol = extract_symbols_from_file(filename)
+    
+    rules = []
+    with open(filename, 'r') as file[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+:
+        for line in file:
+            lhs, rhs = map(str.strip, line.split('::='))
+            rules.append((lhs, rhs))
+
+    new_grammar = {}
+    for lhs, rhs in rules:
+        if lhs not in new_gra[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     return terminals, non_terminals, start_symbol
+bash: return: terminals,: numeric argument required
+bash: return: can only `return' from a function or sourced script
+mmar:
+            new_grammar[lhs] = []
+        new_grammar[lhs].append(rhs)
+
+    return new_grammar, terminals, non_terminals, start_symbol
+
+def remo[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+veunreachable(new_grammar, start_symbol):
+    reachable = {start_symbol}
+    unreachable = set(new_grammar.keys()) - reachable
+
+    changed = True
+   [0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def get_combinations(symbols, nullable_set):
+bash: syntax error near unexpected token `('
+ while changed:
+        changed = False
+        for lhs, rhs_list in new_grammar.items():
+            if lhs in reachable:
+                for rhs in [0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     if not symbols:
+>         return [[]]
+> 
+>     first = symbols[0]
+>     rest_combinations = get_combinations(symbols[1:], nullable_set)
+bash: syntax error near unexpected token `('
+rhs_list:
+                    for symbol in rhs.split():
+                        if symbol in unreachable:
+                            reachable.add(s[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+ymbol)
+                            unreachable.remove(symbol)
+                            changed = True
+
+    for sym in unreachable:
+        del new_[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     if first in nullable_set:
+bash: syntax error near unexpected token `in'
+grammar[sym]
+
+    return new_grammar
+
+def unproductive(new_grammar, terminals, non_terminals, start_symbol):
+    productive = set()
+
+    for lhs, rhs_[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         return [[first] + rest for rest in rest_combinations] + [rest for rest in rest_combinations]
+bash: return: [[first]: numeric argument required
+bash: return: can only `return' from a function or sourced script
+s_list:
+            if all(s in terminals for s in rhs.split()):
+                productive.add(lhs)[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     else:
+bash: else:: command not found
+
+
+    changed = True
+    while changed:
+        changed = False
+        for lhs, rhs_list in new_grammar.items():
+            for rhs in rhs_list:
+                if all(s in terminals or s in product[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         return [[first] + rest for rest in rest_combinations]
+bash: return: [[first]: numeric argument required
+bash: return: can only `return' from a function or sourced script
+ive for s in rhs.split()):
+                    if lhs not in productive:
+                        productive.add(lhs)
+                        changed =[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+ True
+
+    for lhs in list(new_grammar.keys()):
+        if lhs not in productive:
+            del new_grammar[lhs]
+
+    return new_grammar
+
+def unreac[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def removeEps(new_grammar):
+bash: syntax error near unexpected token `('
+eunreachable(new_grammar, start_symbol)
+
+
+
+def atmostoneEps(new_grammar, start_symbol, nullable_set)[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     nullable = set()
+:
+    # If the original start symbol is nullable, bash: syntax error near unexpected token `('
+add a new start symbol S1
+    if start_symbol in nullable_set:
+        if "<S1>" not in new_grammar:
+            new_grammar["<S1>"] = ["", start_symb[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     for lhs, rhs_list in new_grammar.items():
+bash: syntax error near unexpected token `rhs_list'
+ol]
+        else:
+            new_grammar["<S1>"].extend(["", start_symbol])
+        return "<S1>"
+    return start_symbol
+
+# ... (all the previous fu[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         for rhs in rhs_list:
+>             if rhs == '':
+bash: syntax error near unexpected token `if'
+nctions remain unchanged)
+
+def main_procedure(filename):
+    new_grammar, terminals, non_terminals, start_symbol = construct_new_grammar(filename)
+   [0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                 nullable.add(lhs)
+bash: syntax error near unexpected token `lhs'
+ 
+    print("Start Symbol:", start_symbol)
+
+    new_grammar = unproductive(new_grammar, terminals, non_terminals, start_symbol)
+    print("\nAfter removing unproductive rules:")
+    for lhs, rules in [0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+new_grammar.items():
+        for rule in rules:
+            print(f"{lhs} ::= {rule}")
+
+    new_grammar = unreachable(new_grammar, start_symbol)
+    p[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     changed = True
+bash: changed: command not found
+rint("\nAfter removing unreachable rules:")
+    for lhs, rules in new_grammar.items():
+        for rule in rules:
+            print(f"{lhs} ::= {rule}[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     while changed:
+>         changed = False
+>         for lhs, rhs_list in new_grammar.items():
+bash: syntax error near unexpected token `rhs_list'
+")
+
+    nullable_set = removeEps(new_grammar)
+    print("\nNullable set:", ', '.join(sorted(nullable_set)))
+
+    new_grammar = remove_epsilon_producti[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             for rhs in rhs_list:
+>                 symbols = rhs.split()
+bash: syntax error near unexpected token `symbols'
+ons(new_grammar, nullable_set)
+
+    # Modify the start symbol and grammar rules if necessary
+    start_symbol = atmostoneEps(new_grammar, start_[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                 if all(symbol in nullable for symbol in symbols) and lhs not in nullable:
+bash: syntax error near unexpected token `symbol'
+, nullable_set)
+
+    print("\nAfter Removing Epsilon Productions:")
+
+    # Ensure ne[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                     nullable.add(lhs)
+bash: syntax error near unexpected token `lhs'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                     changed = True
+bash: changed: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+ [0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     return nullable
+bash: return: nullable: numeric argument required
+bash: return: can only `return' from a function or sourced script
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+"[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def remove_epsilon_productions(grammar, nullable_set):
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     new_grammar = {}
+bash: new_grammar: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     for lhs, rhs_list in grammar.items():
+bash: syntax error near unexpected token `rhs_list'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         new_rules = set()
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         for rhs in rhs_list:
+>             symbols = rhs.split()
+bash: syntax error near unexpected token `symbols'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             all_combinations = get_combinations(symbols, nullable_set)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             for combo in all_combinations:
+>                 new_rules.add(' '.join(combo).replace('<>', ''))
+bash: syntax error near unexpected token `new_rules.add'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         new_grammar[lhs] = list(new_rules)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         if '' in new_grammar[lhs]:
+bash: syntax error near unexpected token `in'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             new_grammar[lhs].remove('')
+bash: syntax error near unexpected token `'''
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     return new_grammar
+bash: return: new_grammar: numeric argument required
+bash: return: can only `return' from a function or sourced script
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def construct_new_grammar(filename):
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     terminals, non_terminals, start_symbol = extract_symbols_from_file(filename)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     rules = []
+bash: rules: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     with open(filename, 'r') as file:
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         for line in file:
+>             lhs, rhs = map(str.strip, line.split('::='))
+bash: syntax error near unexpected token `lhs,'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             rules.append((lhs, rhs))
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     new_grammar = {}
+bash: new_grammar: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     for lhs, rhs in rules:
+bash: syntax error near unexpected token `rhs'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         if lhs not in new_grammar:
+bash: syntax error near unexpected token `in'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             new_grammar[lhs] = []
+bash: new_grammar[lhs]: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         new_grammar[lhs].append(rhs)
+bash: syntax error near unexpected token `rhs'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     return new_grammar, terminals, non_terminals, start_symbol
+bash: return: new_grammar,: numeric argument required
+bash: return: can only `return' from a function or sourced script
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def removeunreachable(new_grammar, start_symbol):
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     reachable = {start_symbol}
+bash: reachable: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     unreachable = set(new_grammar.keys()) - reachable
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     changed = True
+bash: changed: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     while changed:
+>         changed = False
+>         for lhs, rhs_list in new_grammar.items():
+bash: syntax error near unexpected token `rhs_list'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             if lhs in reachable:
+bash: syntax error near unexpected token `in'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                 for rhs in rhs_list:
+>                     for symbol in rhs.split():
+bash: syntax error near unexpected token `for'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                         if symbol in unreachable:
+bash: syntax error near unexpected token `in'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                             reachable.add(symbol)
+bash: syntax error near unexpected token `symbol'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                             unreachable.remove(symbol)
+bash: syntax error near unexpected token `symbol'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                             changed = True
+bash: changed: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     for sym in unreachable:
+>         del new_grammar[sym]
+bash: syntax error near unexpected token `del'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     return new_grammar
+bash: return: new_grammar: numeric argument required
+bash: return: can only `return' from a function or sourced script
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def unproductive(new_grammar, terminals, non_terminals, start_symbol):
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     productive = set()
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     for lhs, rhs_list in new_grammar.items():
+bash: syntax error near unexpected token `rhs_list'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         for rhs in rhs_list:
+>             if all(s in terminals for s in rhs.split()):
+bash: syntax error near unexpected token `if'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                 productive.add(lhs)
+bash: syntax error near unexpected token `lhs'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     changed = True
+bash: changed: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     while changed:
+>         changed = False
+>         for lhs, rhs_list in new_grammar.items():
+bash: syntax error near unexpected token `rhs_list'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             for rhs in rhs_list:
+>                 if all(s in terminals or s in productive for s in rhs.split()):
+bash: syntax error near unexpected token `if'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                     if lhs not in productive:
+bash: syntax error near unexpected token `in'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                         productive.add(lhs)
+bash: syntax error near unexpected token `lhs'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$                         changed = True
+bash: changed: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     for lhs in list(new_grammar.keys()):
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         if lhs not in productive:
+bash: syntax error near unexpected token `in'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$             del new_grammar[lhs]
+bash: del: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     return new_grammar
+bash: return: new_grammar: numeric argument required
+bash: return: can only `return' from a function or sourced script
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def unreachable(new_grammar, start_symbol):
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     return removeunreachable(new_grammar, start_symbol)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def atmostoneEps(new_grammar, start_symbol, nullable_set):
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     # If the original start symbol is nullable, add a new start symbol S1
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     if start_symbol in nullable_set:
+bash: syntax error near unexpected token `in'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         if "<S1>" not in new_grammar:
+>             new_grammar["<S1>"] = ["", start_symbol]
+>         else:
+>             new_grammar["<S1>"].extend(["", start_symbol])
+bash: syntax error near unexpected token `["",'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         return "<S1>"
+bash: return: <S1>: numeric argument required
+bash: return: can only `return' from a function or sourced script
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     return start_symbol
+bash: return: start_symbol: numeric argument required
+bash: return: can only `return' from a function or sourced script
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ # ... (all the previous functions remain unchanged)
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ def main_procedure(filename):
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     new_grammar, terminals, non_terminals, start_symbol = construct_new_grammar(filename)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     print("Start Symbol:", start_symbol)
+bash: syntax error near unexpected token `"Start Symbol:",'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     new_grammar = unproductive(new_grammar, terminals, non_terminals, start_symbol)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     print("\nAfter removing unproductive rules:")
+bash: syntax error near unexpected token `"\nAfter removing unproductive rules:"'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     for lhs, rules in new_grammar.items():
+bash: syntax error near unexpected token `rules'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         for rule in rules:
+>             print(f"{lhs} ::= {rule}")
+bash: syntax error near unexpected token `print'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     new_grammar = unreachable(new_grammar, start_symbol)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     print("\nAfter removing unreachable rules:")
+bash: syntax error near unexpected token `"\nAfter removing unreachable rules:"'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     for lhs, rules in new_grammar.items():
+bash: syntax error near unexpected token `rules'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         for rule in rules:
+>             print(f"{lhs} ::= {rule}")
+bash: syntax error near unexpected token `print'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     nullable_set = removeEps(new_grammar)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     print("\nNullable set:", ', '.join(sorted(nullable_set)))
+bash: syntax error near unexpected token `"\nNullable set:",'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     new_grammar = remove_epsilon_productions(new_grammar, nullable_set)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     # Modify the start symbol and grammar rules if necessary
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     start_symbol = atmostoneEps(new_grammar, start_symbol, nullable_set)
+bash: syntax error near unexpected token `('
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     print("\nAfter Removing Epsilon Productions:")
+bash: syntax error near unexpected token `"\nAfter Removing Epsilon Productions:"'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     # Ensure new start rules are printed first
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     if "<S1>" in new_grammar:
+bash: syntax error near unexpected token `in'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         for rule in new_grammar["<S1>"]:
+>             print(f"<S1> ::= {rule}")
+bash: syntax error near unexpected token `print'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         del new_grammar["<S1>"]  # Remove <S1> rules to avoid reprinting
+bash: del: command not found
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     # Now, print the remaining rules
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$     for lhs, rules in new_grammar.items():
+bash: syntax error near unexpected token `rules'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$         for rule in rules:
+>             print(f"{lhs} ::= {rule}")
+bash: syntax error near unexpected token `print'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ if _name_ == "_main_":
+>     filename = "input7.txt"
+>     main_procedure(filename)^C
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ if _name_ == "_main_":;     filename = "input7.txt"[22Pdef main_procedure(filename):# ... (all the previous functions remain unchanged)def atmostoneEps(new_grammar, start_symbol, nullable_set):[15Punreachable(new_grammar, start_symbol):[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+2trail.py  input.txt   input2.txt  input4.txt  input6.txt  log2.txt  log4.txt  output.txt
+README.md  input1.txt  input3.txt  input5.txt  log1.txt    log3.txt  main.py   trail.py
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ lsif _name_ == "_main_":;     filename = "input7.txt"ls[K[K[Kpython [K3 2`[Ktrail.py 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/2trail.py", line 184, in <module>
+    if _name_ == "_main_":
+NameError: name '_name_' is not defined. Did you mean: '__name__'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt 
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= 
+<A> ::= a <A> b
+<A> ::= a b
+<B> ::= a
+<B> ::= a <A>
+<S> ::= <A> <B>
+<S> ::= <B>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt [C[C[C[C[C[C[C[C[1@1
+Output written to output.txt
+
+Contents of output.txt:
+<A> ::= a
+<A> ::= a <A>
+<B> ::= b
+<S> ::= <A> <B>
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt [1P
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt [1@4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt [1P[1@6
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt [1P[1@4
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 129, in <module>
+    grammar, terminals, non_terminals = parse_grammar(input_file_path)
+  File "/workspaces/FLT_Assignment4/trail.py", line 8, in parse_grammar
+    with open(file_path, 'r') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'inpu46.txt'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py inpu46.txt output.txt [1P
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 129, in <module>
+    grammar, terminals, non_terminals = parse_grammar(input_file_path)
+  File "/workspaces/FLT_Assignment4/trail.py", line 8, in parse_grammar
+    with open(file_path, 'r') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'inpu4.txt'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py inpu4.txt output.txt [1@t
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear[Kclearpython trail.py input4.txt output.txt 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt clear[Kpython trail.py input4.txt output.txt [1P[1@6
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt [C[C[1P[1@1
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt [1P[1@2
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input2.txt output.txt [1P
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt 
+<A> ::= a <A> b
+<A> ::= a b
+<B> ::= a
+<B> ::= a <A>
+<S> ::= <A> <B>
+<S> ::= <B>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt [1@6
+<S1> ::= <S>
+<S1> ::= ε
+<S> ::= a <S> b
+<S> ::= a b
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input6.txt output.txt [1P[1@4
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= c
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= <A>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B>
+<T> ::= <B> <C>
+<T> ::= <C>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt 
+<A> ::= <C>
+<A> ::= a
+<A> ::= a <A>
+<B> ::= <B> b
+<B> ::= <C>
+<B> ::= b
+<C> ::= c
+<S> ::= a <T> a
+<S> ::= a a
+<T> ::= <A>
+<T> ::= <A> <B>
+<T> ::= <A> <B> <C>
+<T> ::= <A> <C>
+<T> ::= <B>
+<T> ::= <B> <C>
+<T> ::= <C>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt [1P[1@6
+<S1> ::= 
+<S1> ::= <S>
+<S> ::= a <S> b
+<S> ::= a b
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ exit
+
+Script done on 2023-10-26 07:25:22+00:00 [COMMAND_EXIT_CODE="0"]

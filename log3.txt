@@ -1,0 +1,311 @@
+Script started on 2023-10-26 02:52:37+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="159" LINES="6"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ ls
+README.md  input.txt  log1.txt  log2.txt  log3.txt  main.py  output.txt  trail.py
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ lsclearscript log1.txtls[Kpython main.py input.txt output.txt
+terminals: {'b', 'a'}
+non-terminals: {'<A>', '<C>', '<B>', '<S>', '<D>'}
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt output.txtls[Kclearscript log1.txtls[Kpython main.py input.txt output.txtclear[Kpython main.py input.txt output.txt[K[K[K[K[K[K[K[K[Ktrail.py input.txt 
+Productive Grammar:
+<S> ::= <A> <B>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+<D> ::= <A> <B>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt main.py input.txt output.txt[9Ptrail.py input.txt 
+Productive Grammar:
+<S> ::= <A> <B>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+<D> ::= <A> <B>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt [1@1
+Productive Grammar:
+<S> ::= a
+<A> ::= a <A>
+<A> ::= a
+<B> ::= b
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt [1P[1@2
+Productive Grammar:
+<S> ::= <A>
+<S> ::= b
+<A> ::= a <A>
+<A> ::= a
+<B> ::= c <C>
+<C> ::= d
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input2.txt [1P[1@3
+Productive Grammar:
+<A> ::= x
+<A> ::= y
+<C> ::= z
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input3.txt [1P[1@4
+Productive Grammar:
+<S> ::= a <T> a
+<T> ::= <A> <B> <C>
+<A> ::= a <A>
+<A> ::= <C>
+<B> ::= <B> b
+<B> ::= <C>
+<C> ::= c
+<C> ::= 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt [1P[1P[1P[1P[1P[1@m[1@a[1@i[1@n[C[C[C[C[C[C[C[C[C[C[1P
+Productive Grammar:
+<S> ::= <A> <B>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+<D> ::= <A> <B>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input.txt [C[1@3
+Productive Grammar:
+<A> ::= x
+<A> ::= y
+<C> ::= z
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ ls
+README.md  input.txt  input1.txt  input2.txt  input3.txt  input4.txt  log1.txt  log2.txt  log3.txt  main.py  output.txt  trail.py
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ clear[3Plsclear[K[K[K[K[Kpython trail.py output.txt [K
+Usage: python script_name.py input_file output_file
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py output.txt[Kpython trail.py output.txt[Cioutput.txtnoutput.txtpoutput.txtuoutput.txttoutput.txt.output.txttoutput.txtxoutput.txttoutput.txt output.txt
+Output written to output.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<S> ::= <A> <C>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+<C> ::= b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<S> ::= <A> <C>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+<C> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt[1@3
+Output written to output.txt
+
+Contents of output.txt:
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input3.txt output.txt[1P[1@1
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt[C[C[C[C[1P[1P[1P[1P[1P[1P[1@m[1@a[1@i[1@n[1@.
+Usage: python script_name.py input_file
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input1.txt output.txt[K[K[K[K[K[K[K[K[K[K[K
+Productive Grammar:
+<S> ::= a
+<A> ::= a <A>
+<A> ::= a
+<B> ::= b
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python main.py input1.txt output.txt[1@trail[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt[12Pmain.py input1.txttrail.py input1.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt[1P[1@2
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A>
+<S> ::= b
+<A> ::= a <A>
+<A> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input2.txt output.txt[Kpython trail.py input2.txt output.txt1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@3
+Output written to output.txt
+
+Contents of output.txt:
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input3.txt output.txt[C[1P[1@4
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a <T> a
+<T> ::= <A> <B> <C>
+<A> ::= a <A>
+<A> ::= <C>
+<B> ::= <B> b
+<B> ::= <C>
+<C> ::= c
+<C> ::= 
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt[C[1P[1@2
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A>
+<S> ::= b
+<A> ::= a <A>
+<A> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input2.txt output.txt[C[1P[1@1
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt[C[1P
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<A> ::= a <A> b
+<A> ::= 
+<B> ::= a <A>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 84, in <module>
+    reachable_grammar, reachable_symbols = remove_unreachable_symbols(productive_grammar, start_symbol)
+  File "/workspaces/FLT_Assignment4/trail.py", line 59, in remove_unreachable_symbols
+    for non_terminal in reachable_symbols:
+RuntimeError: Set changed size during iteration
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment4/trail.py", line 84, in <module>
+    reachable_grammar, reachable_symbols = remove_unreachable_symbols(productive_grammar, start_symbol)
+  File "/workspaces/FLT_Assignment4/trail.py", line 59, in remove_unreachable_symbols
+    for non_terminal in reachable_symbols:
+RuntimeError: Set changed size during iteration
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<B> ::= a <A>
+<A> ::= a <A> b
+<A> ::= 
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt[1@1
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<B> ::= b
+<A> ::= a <A>
+<A> ::= a
+<S> ::= <A> <B>
+<S> ::= a
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<S> ::= a
+<A> ::= a <A>
+<A> ::= a
+<B> ::= b
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input1.txt output.txt[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= <A> <B>
+<B> ::= a <A>
+<A> ::= a <A> b
+<A> ::= 
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input.txt output.txt[C[C[C[C[C[1@3
+Output written to output.txt
+
+Contents of output.txt:
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input3.txt output.txt[C[1P[1@4
+Output written to output.txt
+
+Contents of output.txt:
+<S> ::= a <T> a
+<T> ::= <A> <B> <C>
+<C> ::= c
+<C> ::= 
+<A> ::= a <A>
+<A> ::= <C>
+<B> ::= <B> b
+<B> ::= <C>
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ python trail.py input4.txt output.txt[1P[1@3
+Output written to output.txt
+
+Contents of output.txt:
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment4 [0;36m([1;31mmain[0;36m) [0m$ exit
+
+Script done on 2023-10-26 03:36:16+00:00 [COMMAND_EXIT_CODE="0"]
