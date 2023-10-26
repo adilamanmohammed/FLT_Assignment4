@@ -11,7 +11,7 @@ def parse_grammar(file_path):
             if line:
                 lhs, rhs = line.split("::=")
                 lhs = lhs.strip()
-                rhs = [symbol.strip() for symbol in rhs.split() if symbol.strip()]
+                rhs = tuple(symbol.strip() for symbol in rhs.split() if symbol.strip())
 
                 non_terminals.add(lhs)
                 for symbol in rhs:
@@ -21,9 +21,9 @@ def parse_grammar(file_path):
                         terminals.add(symbol)
 
                 if lhs in grammar:
-                    grammar[lhs].append(rhs)
+                    grammar[lhs].add(rhs)
                 else:
-                    grammar[lhs] = [rhs]
+                    grammar[lhs] = {rhs}
 
     return grammar, terminals, non_terminals
 
@@ -31,7 +31,7 @@ def find_nullable_variables(grammar, non_terminals):
     nullable_variables = set()
 
     for non_terminal, productions in grammar.items():
-        if ['ε'] in productions:
+        if ('ε',) in productions:
             nullable_variables.add(non_terminal)
 
     changed = True
@@ -39,7 +39,7 @@ def find_nullable_variables(grammar, non_terminals):
         changed = False
         for non_terminal in non_terminals:
             if non_terminal not in nullable_variables:
-                for production in grammar.get(non_terminal, []):
+                for production in grammar.get(non_terminal, set()):
                     if all(symbol in nullable_variables or symbol == 'ε' for symbol in production):
                         nullable_variables.add(non_terminal)
                         changed = True
@@ -47,28 +47,27 @@ def find_nullable_variables(grammar, non_terminals):
 
     return nullable_variables
 
+def add_nullable_productions(grammar, nullable_variables):
+    new_grammar = {k: {tuple(prod) for prod in v} for k, v in grammar.items()}
+    for non_terminal, productions in grammar.items():
+        for production in productions:
+            if any(symbol in nullable_variables for symbol in production):
+                new_prods = [production]
+                for symbol in production:
+                    if symbol in nullable_variables:
+                        new_prods = [prod[:i] + prod[i + 1:] for prod in new_prods for i in range(len(prod)) if prod[i] == symbol] + new_prods
+                new_grammar[non_terminal].update(tuple(prod) for prod in new_prods)
+    return new_grammar
+
 def remove_eps(grammar, non_terminals):
     nullable_variables = find_nullable_variables(grammar, non_terminals)
-    new_grammar = {k: [production[:] for production in v] for k, v in grammar.items()}
-
-    for non_terminal in non_terminals:
-        productions_to_add = []
-        for production in new_grammar.get(non_terminal, []):
-            for symbol in production:
-                if symbol in nullable_variables:
-                    new_production = production[:]
-                    new_production.remove(symbol)
-                    if new_production and new_production != production and new_production not in new_grammar.get(non_terminal, []):
-                        productions_to_add.append(new_production)
-
-        if non_terminal not in new_grammar:
-            new_grammar[non_terminal] = []
-        new_grammar[non_terminal].extend(productions_to_add)
+    grammar = add_nullable_productions(grammar, nullable_variables)
+    new_grammar = {k: {tuple(prod) for prod in v} for k, v in grammar.items()}
 
     for non_terminal in non_terminals:
         if non_terminal in new_grammar:
-            new_grammar[non_terminal] = [production for production in new_grammar[non_terminal] if production != ['ε']]
-
+            new_grammar[non_terminal] = {production for production in new_grammar[non_terminal] if production != ('ε',)}
+    
     return new_grammar, non_terminals
 
 def remove_unproductive(grammar, terminals, non_terminals):
@@ -80,7 +79,7 @@ def remove_unproductive(grammar, terminals, non_terminals):
         change = False
         for non_terminal in non_terminals:
             if non_terminal not in productive_symbols:
-                for production in grammar.get(non_terminal, []):
+                for production in grammar.get(non_terminal, set()):
                     if all(symbol in productive_symbols for symbol in production):
                         productive_symbols.add(non_terminal)
                         change = True
@@ -88,10 +87,10 @@ def remove_unproductive(grammar, terminals, non_terminals):
     
     for non_terminal in non_terminals:
         if non_terminal in productive_symbols:
-            productive_grammar[non_terminal] = []
-            for production in grammar[non_terminal]:
+            productive_grammar[non_terminal] = set()
+            for production in grammar.get(non_terminal, set()):
                 if all(symbol in productive_symbols for symbol in production):
-                    productive_grammar[non_terminal].append(production)
+                    productive_grammar[non_terminal].add(production)
 
     return productive_grammar, terminals, productive_symbols
 
@@ -110,7 +109,7 @@ def remove_unreachable_symbols(grammar, start_symbol):
 
     unreachable_grammar = {k: v for k, v in grammar.items() if k in reachable_symbols}
     for non_terminal in unreachable_grammar:
-        unreachable_grammar[non_terminal] = [production for production in unreachable_grammar[non_terminal] if all(symbol in reachable_symbols for symbol in production)]
+        unreachable_grammar[non_terminal] = {production for production in unreachable_grammar[non_terminal] if all(symbol in reachable_symbols for symbol in production)}
 
     return unreachable_grammar, reachable_symbols
 
@@ -129,8 +128,8 @@ if __name__ == "__main__":
     final_grammar, final_non_terminals = remove_eps(reachable_grammar, reachable_symbols)
 
     with open(output_file_path, 'w') as f:
-        for lhs, productions in final_grammar.items():
-            for production in productions:
+        for lhs, productions in sorted(final_grammar.items()):
+            for production in sorted(productions):
                 f.write(f"{lhs} ::= {' '.join(production)}\n")
 
     print("Output written to", output_file_path)
