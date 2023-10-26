@@ -3,7 +3,7 @@ Name : Adil Aman Mohammed
 Course : Formal language theory
 Assignment no: 4
 CWID : A20395630
-Description: 
+Description: the below code is an implementation of taking input CFG and applying 3 algorithms (epsilon-removal, unproductive removal, unreachable removal)
 """
 
 import sys
