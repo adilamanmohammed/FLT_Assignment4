@@ -28,43 +28,69 @@ def parse_grammar(file_path):
     return grammar, terminals, non_terminals
 
 def remove_unproductive(grammar, terminals, non_terminals):
-    productive_grammar = {k: [] for k in grammar}
-    productive_non_terminals = set()
-
-    productive_terminals = set(terminals)
-
-    new_marked = True
-    while new_marked:
-        new_marked = False
-        for non_terminal, productions in grammar.items():
-            if non_terminal not in productive_non_terminals:
-                for production in productions:
-                    if all(symbol in productive_terminals or symbol in productive_non_terminals for symbol in production):
-                        productive_non_terminals.add(non_terminal)
-                        new_marked = True
+    productive_symbols = set(terminals)
+    productive_grammar = {}
+    
+    change = True
+    while change:
+        change = False
+        for non_terminal in non_terminals:
+            if non_terminal not in productive_symbols:
+                for production in grammar.get(non_terminal, []):
+                    if all(symbol in productive_symbols for symbol in production):
+                        productive_symbols.add(non_terminal)
+                        change = True
                         break
+    
+    for non_terminal in non_terminals:
+        if non_terminal in productive_symbols:
+            productive_grammar[non_terminal] = []
+            for production in grammar[non_terminal]:
+                if all(symbol in productive_symbols for symbol in production):
+                    productive_grammar[non_terminal].append(production)
 
-    for non_terminal, productions in grammar.items():
-        for production in productions:
-            if all(symbol in productive_terminals or symbol in productive_non_terminals for symbol in production):
-                productive_grammar[non_terminal].append(production)
+    return productive_grammar, terminals, productive_symbols
 
-    for non_terminal in list(productive_grammar.keys()):
-        if not productive_grammar[non_terminal]:
-            del productive_grammar[non_terminal]
+def remove_unreachable_symbols(grammar, start_symbol):
+    reachable_symbols = {start_symbol}
+    new_added = True
+    while new_added:
+        new_added = False
+        for non_terminal in list(reachable_symbols):  # Create a copy of the set for iteration
+            if non_terminal in grammar:
+                for production in grammar[non_terminal]:
+                    for symbol in production:
+                        if symbol not in reachable_symbols:
+                            reachable_symbols.add(symbol)
+                            new_added = True
 
-    return productive_grammar
+    unreachable_grammar = {k: v for k, v in grammar.items() if k in reachable_symbols}
+    for non_terminal in unreachable_grammar:
+        unreachable_grammar[non_terminal] = [production for production in unreachable_grammar[non_terminal] if all(symbol in reachable_symbols for symbol in production)]
+
+    return unreachable_grammar, reachable_symbols
+
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python script_name.py input_file")
+    if len(sys.argv) != 3:
+        print("Usage: python script_name.py input_file output_file")
         sys.exit(1)
 
     input_file_path = sys.argv[1]
+    output_file_path = sys.argv[2]
     grammar, terminals, non_terminals = parse_grammar(input_file_path)
-    productive_grammar = remove_unproductive(grammar, terminals, non_terminals)
+    start_symbol = next(iter(grammar))
 
-    print("Productive Grammar:")
-    for lhs, productions in productive_grammar.items():
-        for production in productions:
-            print(f"{lhs} ::= {' '.join(production)}")
+    productive_grammar, productive_terminals, productive_non_terminals = remove_unproductive(grammar, terminals, non_terminals)
+    reachable_grammar, reachable_symbols = remove_unreachable_symbols(productive_grammar, start_symbol)
+
+    with open(output_file_path, 'w') as f:
+        for lhs, productions in reachable_grammar.items():
+            for production in productions:
+                f.write(f"{lhs} ::= {' '.join(production)}\n")
+
+    print("Output written to", output_file_path)
+
+    print("\nContents of", output_file_path + ":")
+    with open(output_file_path, 'r') as f:
+        print(f.read())
