@@ -31,7 +31,7 @@ def find_nullable_variables(grammar, non_terminals):
     nullable_variables = set()
 
     for non_terminal, productions in grammar.items():
-        if ('ε',) in productions:
+        if ('ε',) in productions or () in productions:
             nullable_variables.add(non_terminal)
 
     changed = True
@@ -59,16 +59,22 @@ def add_nullable_productions(grammar, nullable_variables):
                 new_grammar[non_terminal].update(tuple(prod) for prod in new_prods)
     return new_grammar
 
-def remove_eps(grammar, non_terminals):
+def remove_eps(grammar, non_terminals, start_symbol):
     nullable_variables = find_nullable_variables(grammar, non_terminals)
     grammar = add_nullable_productions(grammar, nullable_variables)
     new_grammar = {k: {tuple(prod) for prod in v} for k, v in grammar.items()}
 
     for non_terminal in non_terminals:
         if non_terminal in new_grammar:
-            new_grammar[non_terminal] = {production for production in new_grammar[non_terminal] if production != ('ε',)}
-    
-    return new_grammar, non_terminals
+            new_grammar[non_terminal] = {production for production in new_grammar[non_terminal] if production != ('ε',) and production != ()}
+
+    if start_symbol in nullable_variables:
+        new_start_symbol = "<" + start_symbol[1:-1] + "1>"
+        new_grammar[new_start_symbol] = {('ε',), (start_symbol,)}
+        non_terminals.add(new_start_symbol)
+        start_symbol = new_start_symbol
+
+    return new_grammar, non_terminals, start_symbol
 
 def remove_unproductive(grammar, terminals, non_terminals):
     productive_symbols = set(terminals)
@@ -125,15 +131,10 @@ if __name__ == "__main__":
 
     productive_grammar, productive_terminals, productive_non_terminals = remove_unproductive(grammar, terminals, non_terminals)
     reachable_grammar, reachable_symbols = remove_unreachable_symbols(productive_grammar, start_symbol)
-    final_grammar, final_non_terminals = remove_eps(reachable_grammar, reachable_symbols)
+    final_grammar, final_non_terminals, final_start_symbol = remove_eps(reachable_grammar, reachable_symbols, start_symbol)
 
-    with open(output_file_path, 'w') as f:
-        for lhs, productions in sorted(final_grammar.items()):
-            for production in sorted(productions):
-                f.write(f"{lhs} ::= {' '.join(production)}\n")
-
-    print("Output written to", output_file_path)
-
-    print("\nContents of", output_file_path + ":")
-    with open(output_file_path, 'r') as f:
-        print(f.read())
+    with open(output_file_path, 'w') as output_file:
+        for non_terminal in sorted(final_non_terminals):
+            if non_terminal in final_grammar:
+                for production in sorted(final_grammar[non_terminal], key=lambda x: ' '.join(x)):
+                    output_file.write(f"{non_terminal} ::= {' '.join(production)}\n")
